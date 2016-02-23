@@ -318,7 +318,7 @@ After it creates that new list item, the add-in presents a button that starts th
 
 ![Screenshot that shows the Start Workflow page in custom web service](media/69576609-f4c1-4160-9f82-3099e0a07d58.png)
 
-Choosing the  **Start Workflow** button triggers the **StartWorkflow** method in the Controllers\PartSuppliersController.cs file. This method packages the add-in web URL and the web service URL (for your remotely hosted web application, not for the Northwind web service) and passes them to the **StartWorkflow** method in the Services\PartSuppliersService.cs file. The workflow is going to communicate with the remote web application via the web proxy, and the web proxy will add the access token in a request header. This is why the workflow doesn't pass a context token to the **StartWorkflow** method in this sample. The code is shown in the following example.
+Choosing the  **Start Workflow** button triggers the **StartWorkflow** method in the Controllers\PartSuppliersController.cs file. This method packages the add-in web URL and the web service URL (for your remotely hosted web application, not for the Northwind web service) and passes them to the **StartWorkflow** method in the Services\PartSuppliersService.cs file. The workflow is going to communicate with the remote web application via the web proxy, and the web proxy will add the access token in a request header. This is why the code doesn't pass a context token to the **StartWorkflow** method in this sample. The code is shown in the following example.
 
 
 
